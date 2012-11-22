@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		169C35E5165EC76C0096C4AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169C35E4165EC76C0096C4AC /* Cocoa.framework */; };
+		169C35EF165EC76C0096C4AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 169C35ED165EC76C0096C4AC /* InfoPlist.strings */; };
+		169C35F1165EC76C0096C4AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C35F0165EC76C0096C4AC /* main.m */; };
+		169C35F5165EC76C0096C4AC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 169C35F3165EC76C0096C4AC /* Credits.rtf */; };
+		169C35F8165EC76C0096C4AC /* BDADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C35F7165EC76C0096C4AC /* BDADocument.m */; };
+		169C35FB165EC76C0096C4AC /* BDADocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169C35F9165EC76C0096C4AC /* BDADocument.xib */; };
+		169C35FE165EC76C0096C4AC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169C35FC165EC76C0096C4AC /* MainMenu.xib */; };
+		169C3601165EC76C0096C4AC /* BDADocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 169C35FF165EC76C0096C4AC /* BDADocument.xcdatamodeld */; };
+		169C3609165EC76C0096C4AC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169C3608165EC76C0096C4AC /* SenTestingKit.framework */; };
+		169C360A165EC76C0096C4AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169C35E4165EC76C0096C4AC /* Cocoa.framework */; };
+		169C3612165EC76C0096C4AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 169C3610165EC76C0096C4AC /* InfoPlist.strings */; };
+		169C3615165EC76C0096C4AC /* Land_Use_Permits_ITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C3614165EC76C0096C4AC /* Land_Use_Permits_ITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		169C360B165EC76C0096C4AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 169C35D7165EC76C0096C4AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 169C35DF165EC76C0096C4AC;
+			remoteInfo = "Land Use Permits I";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		169C35E0165EC76C0096C4AC /* Land Use Permits I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Land Use Permits I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		169C35E4165EC76C0096C4AC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		169C35E7165EC76C0096C4AC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		169C35E8165EC76C0096C4AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		169C35E9165EC76C0096C4AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		169C35EC165EC76C0096C4AC /* Land Use Permits I-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Land Use Permits I-Info.plist"; sourceTree = "<group>"; };
+		169C35EE165EC76C0096C4AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		169C35F0165EC76C0096C4AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		169C35F2165EC76C0096C4AC /* Land Use Permits I-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Land Use Permits I-Prefix.pch"; sourceTree = "<group>"; };
+		169C35F4165EC76C0096C4AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		169C35F6165EC76C0096C4AC /* BDADocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDADocument.h; sourceTree = "<group>"; };
+		169C35F7165EC76C0096C4AC /* BDADocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDADocument.m; sourceTree = "<group>"; };
+		169C35FA165EC76C0096C4AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BDADocument.xib; sourceTree = "<group>"; };
+		169C35FD165EC76C0096C4AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		169C3600165EC76C0096C4AC /* BDADocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BDADocument.xcdatamodel; sourceTree = "<group>"; };
+		169C3607165EC76C0096C4AC /* Land Use Permits ITests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Land Use Permits ITests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		169C3608165EC76C0096C4AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		169C360F165EC76C0096C4AC /* Land Use Permits ITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Land Use Permits ITests-Info.plist"; sourceTree = "<group>"; };
+		169C3611165EC76C0096C4AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		169C3613165EC76C0096C4AC /* Land_Use_Permits_ITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Land_Use_Permits_ITests.h; sourceTree = "<group>"; };
+		169C3614165EC76C0096C4AC /* Land_Use_Permits_ITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Land_Use_Permits_ITests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169C35DD165EC76C0096C4AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C35E5165EC76C0096C4AC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169C3603165EC76C0096C4AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C3609165EC76C0096C4AC /* SenTestingKit.framework in Frameworks */,
+				169C360A165EC76C0096C4AC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		169C35D5165EC76C0096C4AC = {
+			isa = PBXGroup;
+			children = (
+				169C35EA165EC76C0096C4AC /* Land Use Permits I */,
+				169C360D165EC76C0096C4AC /* Land Use Permits ITests */,
+				169C35E3165EC76C0096C4AC /* Frameworks */,
+				169C35E1165EC76C0096C4AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		169C35E1165EC76C0096C4AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169C35E0165EC76C0096C4AC /* Land Use Permits I.app */,
+				169C3607165EC76C0096C4AC /* Land Use Permits ITests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		169C35E3165EC76C0096C4AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				169C35E4165EC76C0096C4AC /* Cocoa.framework */,
+				169C3608165EC76C0096C4AC /* SenTestingKit.framework */,
+				169C35E6165EC76C0096C4AC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		169C35E6165EC76C0096C4AC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				169C35E7165EC76C0096C4AC /* AppKit.framework */,
+				169C35E8165EC76C0096C4AC /* CoreData.framework */,
+				169C35E9165EC76C0096C4AC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		169C35EA165EC76C0096C4AC /* Land Use Permits I */ = {
+			isa = PBXGroup;
+			children = (
+				169C35F6165EC76C0096C4AC /* BDADocument.h */,
+				169C35F7165EC76C0096C4AC /* BDADocument.m */,
+				169C35F9165EC76C0096C4AC /* BDADocument.xib */,
+				169C35FC165EC76C0096C4AC /* MainMenu.xib */,
+				169C35FF165EC76C0096C4AC /* BDADocument.xcdatamodeld */,
+				169C35EB165EC76C0096C4AC /* Supporting Files */,
+			);
+			path = "Land Use Permits I";
+			sourceTree = "<group>";
+		};
+		169C35EB165EC76C0096C4AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				169C35EC165EC76C0096C4AC /* Land Use Permits I-Info.plist */,
+				169C35ED165EC76C0096C4AC /* InfoPlist.strings */,
+				169C35F0165EC76C0096C4AC /* main.m */,
+				169C35F2165EC76C0096C4AC /* Land Use Permits I-Prefix.pch */,
+				169C35F3165EC76C0096C4AC /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		169C360D165EC76C0096C4AC /* Land Use Permits ITests */ = {
+			isa = PBXGroup;
+			children = (
+				169C3613165EC76C0096C4AC /* Land_Use_Permits_ITests.h */,
+				169C3614165EC76C0096C4AC /* Land_Use_Permits_ITests.m */,
+				169C360E165EC76C0096C4AC /* Supporting Files */,
+			);
+			path = "Land Use Permits ITests";
+			sourceTree = "<group>";
+		};
+		169C360E165EC76C0096C4AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				169C360F165EC76C0096C4AC /* Land Use Permits ITests-Info.plist */,
+				169C3610165EC76C0096C4AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		169C35DF165EC76C0096C4AC /* Land Use Permits I */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169C3618165EC76C0096C4AC /* Build configuration list for PBXNativeTarget "Land Use Permits I" */;
+			buildPhases = (
+				169C35DC165EC76C0096C4AC /* Sources */,
+				169C35DD165EC76C0096C4AC /* Frameworks */,
+				169C35DE165EC76C0096C4AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Land Use Permits I";
+			productName = "Land Use Permits I";
+			productReference = 169C35E0165EC76C0096C4AC /* Land Use Permits I.app */;
+			productType = "com.apple.product-type.application";
+		};
+		169C3606165EC76C0096C4AC /* Land Use Permits ITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169C361B165EC76C0096C4AC /* Build configuration list for PBXNativeTarget "Land Use Permits ITests" */;
+			buildPhases = (
+				169C3602165EC76C0096C4AC /* Sources */,
+				169C3603165EC76C0096C4AC /* Frameworks */,
+				169C3604165EC76C0096C4AC /* Resources */,
+				169C3605165EC76C0096C4AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				169C360C165EC76C0096C4AC /* PBXTargetDependency */,
+			);
+			name = "Land Use Permits ITests";
+			productName = "Land Use Permits ITests";
+			productReference = 169C3607165EC76C0096C4AC /* Land Use Permits ITests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		169C35D7165EC76C0096C4AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BDA;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Brian Alonso";
+			};
+			buildConfigurationList = 169C35DA165EC76C0096C4AC /* Build configuration list for PBXProject "Land Use Permits I" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 169C35D5165EC76C0096C4AC;
+			productRefGroup = 169C35E1165EC76C0096C4AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				169C35DF165EC76C0096C4AC /* Land Use Permits I */,
+				169C3606165EC76C0096C4AC /* Land Use Permits ITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		169C35DE165EC76C0096C4AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C35EF165EC76C0096C4AC /* InfoPlist.strings in Resources */,
+				169C35F5165EC76C0096C4AC /* Credits.rtf in Resources */,
+				169C35FB165EC76C0096C4AC /* BDADocument.xib in Resources */,
+				169C35FE165EC76C0096C4AC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169C3604165EC76C0096C4AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C3612165EC76C0096C4AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		169C3605165EC76C0096C4AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		169C35DC165EC76C0096C4AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C35F1165EC76C0096C4AC /* main.m in Sources */,
+				169C35F8165EC76C0096C4AC /* BDADocument.m in Sources */,
+				169C3601165EC76C0096C4AC /* BDADocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169C3602165EC76C0096C4AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C3615165EC76C0096C4AC /* Land_Use_Permits_ITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		169C360C165EC76C0096C4AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 169C35DF165EC76C0096C4AC /* Land Use Permits I */;
+			targetProxy = 169C360B165EC76C0096C4AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		169C35ED165EC76C0096C4AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169C35EE165EC76C0096C4AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		169C35F3165EC76C0096C4AC /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169C35F4165EC76C0096C4AC /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		169C35F9165EC76C0096C4AC /* BDADocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169C35FA165EC76C0096C4AC /* en */,
+			);
+			name = BDADocument.xib;
+			sourceTree = "<group>";
+		};
+		169C35FC165EC76C0096C4AC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169C35FD165EC76C0096C4AC /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		169C3610165EC76C0096C4AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169C3611165EC76C0096C4AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		169C3616165EC76C0096C4AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		169C3617165EC76C0096C4AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		169C3619165EC76C0096C4AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Land Use Permits I/Land Use Permits I-Prefix.pch";
+				INFOPLIST_FILE = "Land Use Permits I/Land Use Permits I-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		169C361A165EC76C0096C4AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Land Use Permits I/Land Use Permits I-Prefix.pch";
+				INFOPLIST_FILE = "Land Use Permits I/Land Use Permits I-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		169C361C165EC76C0096C4AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Land Use Permits I.app/Contents/MacOS/Land Use Permits I";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Land Use Permits I/Land Use Permits I-Prefix.pch";
+				INFOPLIST_FILE = "Land Use Permits ITests/Land Use Permits ITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		169C361D165EC76C0096C4AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Land Use Permits I.app/Contents/MacOS/Land Use Permits I";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Land Use Permits I/Land Use Permits I-Prefix.pch";
+				INFOPLIST_FILE = "Land Use Permits ITests/Land Use Permits ITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169C35DA165EC76C0096C4AC /* Build configuration list for PBXProject "Land Use Permits I" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169C3616165EC76C0096C4AC /* Debug */,
+				169C3617165EC76C0096C4AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169C3618165EC76C0096C4AC /* Build configuration list for PBXNativeTarget "Land Use Permits I" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169C3619165EC76C0096C4AC /* Debug */,
+				169C361A165EC76C0096C4AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		169C361B165EC76C0096C4AC /* Build configuration list for PBXNativeTarget "Land Use Permits ITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169C361C165EC76C0096C4AC /* Debug */,
+				169C361D165EC76C0096C4AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		169C35FF165EC76C0096C4AC /* BDADocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				169C3600165EC76C0096C4AC /* BDADocument.xcdatamodel */,
+			);
+			currentVersion = 169C3600165EC76C0096C4AC /* BDADocument.xcdatamodel */;
+			path = BDADocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 169C35D7165EC76C0096C4AC /* Project object */;
+}
