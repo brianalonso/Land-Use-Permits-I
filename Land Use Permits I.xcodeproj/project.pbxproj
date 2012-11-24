@@ -19,6 +19,9 @@
 		169C360A165EC76C0096C4AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169C35E4165EC76C0096C4AC /* Cocoa.framework */; };
 		169C3612165EC76C0096C4AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 169C3610165EC76C0096C4AC /* InfoPlist.strings */; };
 		169C3615165EC76C0096C4AC /* Land_Use_Permits_ITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C3614165EC76C0096C4AC /* Land_Use_Permits_ITests.m */; };
+		169C3636165EDDEA0096C4AC /* Applicant.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C3635165EDDEA0096C4AC /* Applicant.m */; };
+		169C3639165EDE110096C4AC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C3638165EDE110096C4AC /* Application.m */; };
+		169C363C165EDE3C0096C4AC /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C363B165EDE3C0096C4AC /* Property.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		169C3611165EC76C0096C4AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		169C3613165EC76C0096C4AC /* Land_Use_Permits_ITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Land_Use_Permits_ITests.h; sourceTree = "<group>"; };
 		169C3614165EC76C0096C4AC /* Land_Use_Permits_ITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Land_Use_Permits_ITests.m; sourceTree = "<group>"; };
+		169C3634165EDDEA0096C4AC /* Applicant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Applicant.h; sourceTree = "<group>"; };
+		169C3635165EDDEA0096C4AC /* Applicant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Applicant.m; sourceTree = "<group>"; };
+		169C3637165EDE100096C4AC /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		169C3638165EDE110096C4AC /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
+		169C363A165EDE3C0096C4AC /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Property.h; sourceTree = "<group>"; };
+		169C363B165EDE3C0096C4AC /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Property.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +132,12 @@
 				169C35F9165EC76C0096C4AC /* BDADocument.xib */,
 				169C35FC165EC76C0096C4AC /* MainMenu.xib */,
 				169C35FF165EC76C0096C4AC /* BDADocument.xcdatamodeld */,
+				169C363A165EDE3C0096C4AC /* Property.h */,
+				169C363B165EDE3C0096C4AC /* Property.m */,
+				169C3637165EDE100096C4AC /* Application.h */,
+				169C3638165EDE110096C4AC /* Application.m */,
+				169C3634165EDDEA0096C4AC /* Applicant.h */,
+				169C3635165EDDEA0096C4AC /* Applicant.m */,
 				169C35EB165EC76C0096C4AC /* Supporting Files */,
 			);
 			path = "Land Use Permits I";
@@ -272,6 +287,9 @@
 				169C35F1165EC76C0096C4AC /* main.m in Sources */,
 				169C35F8165EC76C0096C4AC /* BDADocument.m in Sources */,
 				169C3601165EC76C0096C4AC /* BDADocument.xcdatamodeld in Sources */,
+				169C3636165EDDEA0096C4AC /* Applicant.m in Sources */,
+				169C3639165EDE110096C4AC /* Application.m in Sources */,
+				169C363C165EDE3C0096C4AC /* Property.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

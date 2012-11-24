@@ -7,6 +7,9 @@
 //
 
 #import "BDADocument.h"
+#import "Applicant.h"
+#import "Property.h"
+#import "Application.h"
 
 @implementation BDADocument
 
@@ -37,4 +40,73 @@
     return YES;
 }
 
+- (IBAction)addRecords:(id)sender {
+    Applicant *larry = [Applicant findOrCreateApplicantWithName:@"Larry"
+                                                        context:self.managedObjectContext];
+    Applicant *moe = [Applicant findOrCreateApplicantWithName:@"Moe"
+                                                      context:self.managedObjectContext];
+    Applicant *curly = [Applicant findOrCreateApplicantWithName:@"Curly"
+                                                        context:self.managedObjectContext];
+    
+    Property *one = [Property findOrCreatePropertyWithAddress:@"123 1ST ST"
+                                                      context:self.managedObjectContext];
+    Property *two = [Property findOrCreatePropertyWithAddress:@"123 2ND ST"
+                                                      context:self.managedObjectContext];
+    Property *three = [Property findOrCreatePropertyWithAddress:@"123 3RD ST"
+                                                        context:self.managedObjectContext];
+    Property *four = [Property findOrCreatePropertyWithAddress:@"123 4TH ST"
+                                                       context:self.managedObjectContext];
+    
+    Application *a = [Application findOrCreateApplicationWithPermitNumber:@"10001"
+                                                                  context:self.managedObjectContext];
+    a.applicant = larry;
+    a.property = one;
+
+    Application *b = [Application findOrCreateApplicationWithPermitNumber:@"10002"
+                                                                  context:self.managedObjectContext];
+    b.applicant = moe;
+    b.property = two;
+    
+    Application *c = [Application findOrCreateApplicationWithPermitNumber:@"10003"
+                                                                  context:self.managedObjectContext];
+    c.applicant = curly;
+    c.property = three;
+    
+    Application *d = [Application findOrCreateApplicationWithPermitNumber:@"10004"
+                                                                  context:self.managedObjectContext];
+    d.applicant = larry;
+    d.property = four;
+    
+    Application *e = [Application findOrCreateApplicationWithPermitNumber:@"10005"
+                                                                  context:self.managedObjectContext];
+    e.applicant = moe;
+    e.property = one;
+    
+    Application *f = [Application findOrCreateApplicationWithPermitNumber:@"10006"
+                                                                  context:self.managedObjectContext];
+    f.applicant = curly;
+    f.property = two;
+    
+    Application *g = [Application findOrCreateApplicationWithPermitNumber:@"10007"
+                                                                  context:self.managedObjectContext];
+    g.applicant = larry;
+    g.property = three;
+    
+    Application *h = [Application findOrCreateApplicationWithPermitNumber:@"10008"
+                                                                  context:self.managedObjectContext];
+    h.applicant = moe;
+    h.property = four;
+                                                                  
+    Application *i = [Application findOrCreateApplicationWithPermitNumber:@"10009"
+                                                                  context:self.managedObjectContext];
+    i.applicant = curly;
+    i.property = one;
+                                                                  
+    Application *j = [Application findOrCreateApplicationWithPermitNumber:@"10010"
+                                                                  context:self.managedObjectContext];
+    j.applicant = [Applicant findOrCreateApplicantWithName:@"Shemp"
+                                                   context:self.managedObjectContext];
+    j.property = [Property findOrCreatePropertyWithAddress:@"123 5TH ST"
+                                                   context:self.managedObjectContext];
+}
 @end

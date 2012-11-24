@@ -9,5 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface BDADocument : NSPersistentDocument
+- (IBAction)addRecords:(id)sender;
 
 @end
