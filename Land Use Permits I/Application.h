@@ -14,6 +14,9 @@
 @interface Application : NSManagedObject
 
 @property (nonatomic, retain) NSDate * applicationDate;
+@property (nonatomic, retain) NSDate * issueDate;
+@property (nonatomic, retain) NSDate * appliedDate;
+@property (nonatomic, retain) NSDate * decisionDate;
 @property (nonatomic, copy) NSString * url;
 @property (nonatomic, copy) NSString * permitNumber;
 @property (nonatomic, copy) NSString * category;
@@ -26,4 +29,6 @@
                                                  context:(NSManagedObjectContext *)moc;
 + (NSArray *)applicationsWithPermitNumber:(NSString *)searchName
                                   context:(NSManagedObjectContext *)moc;
+
++ (NSNumber *)applicationsCount:(NSManagedObjectContext *)moc;
 @end

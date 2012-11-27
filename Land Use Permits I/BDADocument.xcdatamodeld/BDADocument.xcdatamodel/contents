@@ -6,7 +6,10 @@
     </entity>
     <entity name="Application" representedClassName="Application" syncable="YES">
         <attribute name="applicationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="appliedDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="decisionDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="issueDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="permitDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="permitNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
@@ -18,14 +21,16 @@
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="propertyValue" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <relationship name="applications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="property" inverseEntity="Application" syncable="YES"/>
     </entity>
     <fetchRequest name="ApplicantsByName" entity="Applicant" predicateString="name == $x"/>
     <fetchRequest name="ApplicationsByPermit" entity="Application" predicateString="permitNumber == $x"/>
+    <fetchRequest name="ApplicationsCount" entity="Application" predicateString="permitNumber != &quot;nil&quot;"/>
     <fetchRequest name="PropertiesByAddress" entity="Property" predicateString="address == $x"/>
     <elements>
         <element name="Applicant" positionX="-225" positionY="54" width="128" height="73"/>
-        <element name="Application" positionX="27" positionY="233" width="128" height="163"/>
-        <element name="Property" positionX="-315" positionY="203" width="128" height="103"/>
+        <element name="Application" positionX="27" positionY="233" width="128" height="208"/>
+        <element name="Property" positionX="-315" positionY="203" width="128" height="120"/>
     </elements>
 </model>

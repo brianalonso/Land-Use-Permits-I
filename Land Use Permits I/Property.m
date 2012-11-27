@@ -15,7 +15,15 @@
 @dynamic address;
 @dynamic latitude;
 @dynamic longitude;
+@dynamic propertyValue;
 @dynamic applications;
+
+-(void)awakeFromInsert
+{
+    self.propertyValue = @123456.99;
+    self.latitude = [NSNumber numberWithDouble:rand()];
+    self.longitude = [NSNumber numberWithDouble:(-1.*(rand()%1000))];
+}
 
 
 + (Property *)findOrCreatePropertyWithAddress:(NSString *)searchName

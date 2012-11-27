@@ -10,5 +10,7 @@
 
 @interface BDADocument : NSPersistentDocument
 - (IBAction)addRecords:(id)sender;
+@property (assign) IBOutlet NSTextField *labelApplicationTableCount;
+@property (assign) IBOutlet NSSearchField *applicationsSearchBar;
 
 @end

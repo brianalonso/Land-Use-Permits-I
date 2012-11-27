@@ -16,6 +16,7 @@
 @property (nonatomic, copy) NSString * address;
 @property (nonatomic, retain) NSNumber * latitude;
 @property (nonatomic, retain) NSNumber * longitude;
+@property (nonatomic, retain) NSNumber * propertyValue;
 @property (nonatomic, retain) NSSet *applications;
 @end
 

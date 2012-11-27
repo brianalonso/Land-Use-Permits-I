@@ -50,57 +50,74 @@
     
     Property *one = [Property findOrCreatePropertyWithAddress:@"123 1ST ST"
                                                       context:self.managedObjectContext];
+    one.propertyValue = @123456;
+   
     Property *two = [Property findOrCreatePropertyWithAddress:@"123 2ND ST"
                                                       context:self.managedObjectContext];
+    two.propertyValue = @9876543;
+
     Property *three = [Property findOrCreatePropertyWithAddress:@"123 3RD ST"
                                                         context:self.managedObjectContext];
+    three.propertyValue = @4356443;
+
     Property *four = [Property findOrCreatePropertyWithAddress:@"123 4TH ST"
                                                        context:self.managedObjectContext];
+    four.propertyValue = @76542834;
+
     
     Application *a = [Application findOrCreateApplicationWithPermitNumber:@"10001"
                                                                   context:self.managedObjectContext];
     a.applicant = larry;
     a.property = one;
+    a.permitDescription = @"This property is a deserted apartment building";
 
     Application *b = [Application findOrCreateApplicationWithPermitNumber:@"10002"
                                                                   context:self.managedObjectContext];
     b.applicant = moe;
     b.property = two;
+    b.permitDescription = @"This property is a retail storefront.";
     
     Application *c = [Application findOrCreateApplicationWithPermitNumber:@"10003"
                                                                   context:self.managedObjectContext];
     c.applicant = curly;
     c.property = three;
+    c.permitDescription = @"Empty lot.";
     
     Application *d = [Application findOrCreateApplicationWithPermitNumber:@"10004"
                                                                   context:self.managedObjectContext];
     d.applicant = larry;
     d.property = four;
+    d.permitDescription = @"This property is a 30 story apartment building.";
     
     Application *e = [Application findOrCreateApplicationWithPermitNumber:@"10005"
                                                                   context:self.managedObjectContext];
     e.applicant = moe;
     e.property = one;
+    a.permitDescription = @"10 story office building";
     
     Application *f = [Application findOrCreateApplicationWithPermitNumber:@"10006"
                                                                   context:self.managedObjectContext];
     f.applicant = curly;
     f.property = two;
+    f.permitDescription = @"Shoe repair shop.";
     
     Application *g = [Application findOrCreateApplicationWithPermitNumber:@"10007"
                                                                   context:self.managedObjectContext];
     g.applicant = larry;
     g.property = three;
+    g.permitDescription = @"Private residence";
     
     Application *h = [Application findOrCreateApplicationWithPermitNumber:@"10008"
                                                                   context:self.managedObjectContext];
     h.applicant = moe;
     h.property = four;
+    h.permitDescription = @"Nothing of value here.";
                                                                   
     Application *i = [Application findOrCreateApplicationWithPermitNumber:@"10009"
                                                                   context:self.managedObjectContext];
     i.applicant = curly;
     i.property = one;
+    i.permitDescription = @"Hotel building.";
                                                                   
     Application *j = [Application findOrCreateApplicationWithPermitNumber:@"10010"
                                                                   context:self.managedObjectContext];
@@ -108,5 +125,10 @@
                                                    context:self.managedObjectContext];
     j.property = [Property findOrCreatePropertyWithAddress:@"123 5TH ST"
                                                    context:self.managedObjectContext];
+    
+    // set table record count label
+    NSNumber *applicationCount = [Application applicationsCount:self.managedObjectContext];
+    [[self labelApplicationTableCount] setStringValue: [NSString stringWithFormat:@"%@ of %@", applicationCount, applicationCount]];
 }
+
 @end

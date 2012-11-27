@@ -13,6 +13,9 @@
 @implementation Application
 
 @dynamic applicationDate;
+@dynamic issueDate;
+@dynamic appliedDate;
+@dynamic decisionDate;
 @dynamic url;
 @dynamic permitNumber;
 @dynamic category;
@@ -21,7 +24,20 @@
 @dynamic property;
 @dynamic applicant;
 
+#pragma mark -
+#pragma mark awakeFromInsert method
 
+-(void)awakeFromInsert
+{
+    self.applicationDate = [NSDate dateWithTimeIntervalSinceNow:-1.*(rand()%1000)*(60.*60.*24.)];
+    self.decisionDate = [NSDate dateWithTimeIntervalSinceNow:-1.*(rand()%1000)*(60.*60.*24.)];
+    self.appliedDate = [NSDate dateWithTimeIntervalSinceNow:-1.*(rand()%1000)*(60.*60.*24.)];
+    self.issueDate = [NSDate dateWithTimeIntervalSinceNow:-1.*(rand()%1000)*(60.*60.*24.)];
+    self.url = @"https://data.seattle.gov/Permitting/Land-Use-Permits/uyyd-8gak";
+}
+
+#pragma mark -
+#pragma mark Class methods
 + (Application *)findOrCreateApplicationWithPermitNumber:(NSString *)searchName
                                                  context:(NSManagedObjectContext *)moc
 {
@@ -61,4 +77,21 @@
     return results;
 
 }
+
++ (NSNumber *)applicationsCount:(NSManagedObjectContext *)moc
+{
+    NSManagedObjectModel *mom = moc.persistentStoreCoordinator.managedObjectModel;
+    
+    NSFetchRequest *applicationsCountFetchRequest =
+    [mom fetchRequestTemplateForName:@"ApplicationsCount"];
+    
+    NSError *error = nil;
+    NSArray *results = [moc executeFetchRequest:applicationsCountFetchRequest error:&error];
+    if (!results) {
+        NSLog(@"%@", error.localizedDescription);
+    };
+    
+    return [NSNumber numberWithDouble:[results count]];
+}
+
 @end
