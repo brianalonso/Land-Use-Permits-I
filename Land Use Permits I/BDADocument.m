@@ -127,8 +127,10 @@
                                                    context:self.managedObjectContext];
     
     // set table record count label
+    /*
     NSNumber *applicationCount = [Application applicationsCount:self.managedObjectContext];
     [[self labelApplicationTableCount] setStringValue: [NSString stringWithFormat:@"%@ of %@", applicationCount, applicationCount]];
+     */
 }
 
 @end
