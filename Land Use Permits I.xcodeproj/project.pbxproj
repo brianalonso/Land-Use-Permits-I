@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1659889316659469001208D5 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1659889016659469001208D5 /* Icon.icns */; };
+		1659889416659469001208D5 /* LandUse.png in Resources */ = {isa = PBXBuildFile; fileRef = 1659889116659469001208D5 /* LandUse.png */; };
+		1659889516659469001208D5 /* mac.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1659889216659469001208D5 /* mac.iconset */; };
+		1659889816659481001208D5 /* mac.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1659889716659481001208D5 /* mac.iconset */; };
 		169C35E5165EC76C0096C4AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169C35E4165EC76C0096C4AC /* Cocoa.framework */; };
 		169C35EF165EC76C0096C4AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 169C35ED165EC76C0096C4AC /* InfoPlist.strings */; };
 		169C35F1165EC76C0096C4AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C35F0165EC76C0096C4AC /* main.m */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1659889016659469001208D5 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		1659889116659469001208D5 /* LandUse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LandUse.png; sourceTree = "<group>"; };
+		1659889216659469001208D5 /* mac.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = mac.iconset; sourceTree = "<group>"; };
+		1659889716659481001208D5 /* mac.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = mac.iconset; sourceTree = "<group>"; };
 		169C35E0165EC76C0096C4AC /* Land Use Permits I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Land Use Permits I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169C35E4165EC76C0096C4AC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		169C35E7165EC76C0096C4AC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -85,9 +93,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1659888F16659469001208D5 /* Land Use Permits Icons_1 */ = {
+			isa = PBXGroup;
+			children = (
+				1659889016659469001208D5 /* Icon.icns */,
+				1659889116659469001208D5 /* LandUse.png */,
+				1659889216659469001208D5 /* mac.iconset */,
+			);
+			name = "Land Use Permits Icons_1";
+			path = "../../../../Desktop/Land Use Permits Icons_1";
+			sourceTree = "<group>";
+		};
 		169C35D5165EC76C0096C4AC = {
 			isa = PBXGroup;
 			children = (
+				1659889716659481001208D5 /* mac.iconset */,
 				169C35EA165EC76C0096C4AC /* Land Use Permits I */,
 				169C360D165EC76C0096C4AC /* Land Use Permits ITests */,
 				169C35E3165EC76C0096C4AC /* Frameworks */,
@@ -146,6 +166,7 @@
 		169C35EB165EC76C0096C4AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1659888F16659469001208D5 /* Land Use Permits Icons_1 */,
 				169C35EC165EC76C0096C4AC /* Land Use Permits I-Info.plist */,
 				169C35ED165EC76C0096C4AC /* InfoPlist.strings */,
 				169C35F0165EC76C0096C4AC /* main.m */,
@@ -250,6 +271,10 @@
 				169C35F5165EC76C0096C4AC /* Credits.rtf in Resources */,
 				169C35FB165EC76C0096C4AC /* BDADocument.xib in Resources */,
 				169C35FE165EC76C0096C4AC /* MainMenu.xib in Resources */,
+				1659889316659469001208D5 /* Icon.icns in Resources */,
+				1659889416659469001208D5 /* LandUse.png in Resources */,
+				1659889516659469001208D5 /* mac.iconset in Resources */,
+				1659889816659481001208D5 /* mac.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +504,7 @@
 				169C361A165EC76C0096C4AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		169C361B165EC76C0096C4AC /* Build configuration list for PBXNativeTarget "Land Use Permits ITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +513,7 @@
 				169C361D165EC76C0096C4AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
